@@ -46,16 +46,19 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <SearchBar
-        userInput={userInput}
-        setUserInput={setUserInput}
-        users={users}
-        selectedUser={selectedUser}
-        setSelectedUser={setSelectedUser}
-      />
+      {!selectedUser && (
+        <SearchBar
+          userInput={userInput}
+          setUserInput={setUserInput}
+          users={users}
+          selectedUser={selectedUser}
+          setSelectedUser={setSelectedUser}
+        />
+      )}
       {selectedUser && (
         <Card
           selectedUser={selectedUser}
+          setSelectedUser={setSelectedUser}
           repoInput={repoInput}
           setRepoInput={setRepoInput}
           userRepos={filteredUserRepos}
