@@ -1,0 +1,21 @@
+.lineCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 4px;
+  border-bottom: 1px solid black;
+
+  &__bio {
+    display: flex;
+    align-items: center;
+  }
+
+  &__avatar {
+    width: 68px;
+    height: 50px;
+  }
+
+  &__login {
+    padding-left: 40px;
+  }
+}
