@@ -1,0 +1,58 @@
+.card {
+  position: sticky;
+  top: 0;
+  margin-left: 24px;
+  width: 460px;
+  border: 1px solid #000;
+  height: min-content;
+
+  &__container {
+    padding: 16px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+  }
+
+  &__avatar {
+    width: 175px;
+    height: 135px;
+  }
+
+  &__bio {
+    margin-left: 28px;
+  }
+
+  &__bio-item {
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+  }
+
+  &__repo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-top: 1px solid #000;
+    overflow: auto;
+
+    &:hover {
+      color: #0000FF;
+    }
+  }
+
+  &__repo-evaluation {
+    white-space: nowrap;
+    padding-left: 24px;
+  }
+}
+    
