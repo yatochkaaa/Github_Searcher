@@ -17,18 +17,5 @@ export interface User {
   "received_events_url": string,
   "type": string,
   "site_admin": boolean,
-  "name": string,
-  "company": string | null,
-  "blog": string,
-  "location": string | null,
-  "email": string | null,
-  "hireable": string | null,
-  "bio": string | null,
-  "twitter_username": string | null,
-  "public_repos": number,
-  "public_gists": number,
-  "followers": number,
-  "following": number,
-  "created_at": string,
-  "updated_at": string
+  "score": number
 }
